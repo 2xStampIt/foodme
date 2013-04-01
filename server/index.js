@@ -38,7 +38,7 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
 
   // API
   app.get(API_URL, function(req, res, next) {
-    res.send(200, storage.getAll().map(removeMenuItems));
+    res.send(200, storage.getAll());
   });
 
 
